@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:83vh;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:50px;
+    background-color: grey;
+}
+.sidebar>ul{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.sidebar>ul>li{
+    margin-bottom: 40px;
+}
+
+.sidebar>ul>li  :first-child{
+margin-top: 20px;
+}
+
+.sidebar>ul>li>a:hover{
+cursor: pointer;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 100%;
+    color: white;
+    background-color: #16161d;
+}
+
+.logo{
+    width: 15vw;
+    height: 68%;
+    padding:40px;
+}
+
+.logo>img{
+    height: 100%;
+    width: 100%;
+}
+
+.details{
+    width:100%
+}
+
+.details>h2{
+    margin-top: 50px;
+}
+
+.details > p{
+    margin-top: 20px;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+}
+
+.table{
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: none;
+    border-collapse:collapse;
+}
+.trow{
+    
+    line-height: 50px;
+    text-align: center;
+}
+
+.button{
+    color: blue;
+    padding: 5px;
+    font-size: 10px;
+    background-color: transparent;
+}
+
+
+.trow:nth-child(2),.trow:nth-child(4)
+{
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 17vh;
+    width: 100vw;
+    background-color: #4682B4;
+}
+.footer>div{
+    flex:1 1 auto;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logo-footer{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.logo-footer>img{
+    height: 100%;
+    width: 100%;
+}
+
+.left-footer>p{
+    margin-top: 25px;
+}
+.right-footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+}
+.icons:hover{
+    cursor: pointer;
+}
+
