@@ -42,10 +42,10 @@ export const MainSection = () => {
 
     const inputEvent = (event) => {
         setInputUrl(event.target.value);
-        
+
         setShortUrl('');
         setLabeltUrl('');
-        
+
     }
 
     const shortenUrl = () => {
@@ -56,10 +56,10 @@ export const MainSection = () => {
         }
         else {
             var url = `https://api.shrtco.de/v2/shorten?url=${inputUrl}`;
-            
+
             axios.get(url)
-            .then((res) => {
-                if (res.data) {
+                .then((res) => {
+                    if (res.data) {
                         setLabeltUrl(inputUrl);
                         setShortUrl(res.data.result.short_link);
                     } else {
@@ -111,7 +111,7 @@ export const MainSection = () => {
 }
 
 export const Footer = () => {
-    return(
+    return (
         <>
             <footer className='footer'>
                 <div className='footer-logo'><h1>Shortly</h1></div>
@@ -139,7 +139,7 @@ export const Footer = () => {
                 <div className='footer-routes'>
                     <p>Login</p>
                     <p>Sign up</p>
-                </div>    
+                </div>
             </footer>
         </>
     )
