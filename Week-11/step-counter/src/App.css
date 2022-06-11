@@ -1,0 +1,32 @@
+.main-component{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.addSteps{
+  margin-top: 20px;
+  width: 150px;
+  align-self: center;
+  padding: 10px;
+  background-color: #8566aa;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.resetSteps{
+  margin-top: 20px;
+  width: 150px;
+  align-self: center;
+  padding: 10px;
+  background-color: #d7cec7;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
