@@ -18,8 +18,7 @@ export const Header = () => {
 
                 <nav className='navbar'>
                     <a href='#'>Features</a>
-
-                    <a href='#'>Pricing</a>
+                     {/* <Link to="/pricing">Pricing</Link> */}
                     <a href='#'>Resources</a>
                 </nav>
 
