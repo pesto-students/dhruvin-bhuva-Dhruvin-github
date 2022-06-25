@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "d784167b-2294-4dc7-a64c-00f2b5cb6fef",
+		"name": "weather APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18344329"
+	},
+	"item": [
+		{
+			"name": "WeatherDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\":\"delhi,ahmedabad\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5400/weather/getAnyCityWeather",
+					"host": [
+						"localhost"
+					],
+					"port": "5400",
+					"path": [
+						"weather",
+						"getAnyCityWeather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ForecastDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\":\"paris,london\",\r\n    \"days\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5400/forecast/getAnyCityForcast",
+					"host": [
+						"localhost"
+					],
+					"port": "5400",
+					"path": [
+						"forecast",
+						"getAnyCityForcast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
