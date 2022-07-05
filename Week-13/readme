@@ -1,0 +1,6 @@
+clone git branch in local system
+
+step 1: navigate to folder : week-13/Weather-Service
+step 2: run command npm install
+step 3: run command node index.js
+step 3: import postman collection shared in week-13 folder into postman application make api request 
